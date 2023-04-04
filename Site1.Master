@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Mini_Project.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div align="center">
+            <h1>Student Info center</h1>
+            <asp:LinkButton ID="linkHome" runat="server" Text="Home" OnClick="linkHome_Click"></asp:LinkButton>&nbsp&nbsp&nbsp&nbsp
+            <asp:LinkButton ID="linkSearch" runat="server" Text="AddStudent" OnClick="linkSearch_Click"></asp:LinkButton>&nbsp&nbsp&nbsp&nbsp            
+            <asp:LinkButton ID="linkSignin" runat="server" Text="Sign in"></asp:LinkButton>&nbsp&nbsp&nbsp&nbsp
+            <asp:LinkButton ID="linkRegister" runat="server" Text="Sign Up"></asp:LinkButton>&nbsp&nbsp&nbsp&nbsp
+            <asp:LinkButton ID="linkLogout" runat="server" Text="Logout"></asp:LinkButton>&nbsp&nbsp&nbsp&nbsp
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
